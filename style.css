@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/*------------- left side-content section -------------*/
+.content {
+  width: 68%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom right, #cc508d, #0037ffde);
+  color: white;
+}
+.content img {
+  width: 65%;
+}
+
+.content h2 {
+  margin-bottom: 15px;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.content h4 {
+  margin-bottom: 60px;
+  font-size: 23px;
+  font-weight: 200;
+}
+
+/*------------- login form -------------- */
+
+.login_form {
+  height: 100%;
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.login_form img {
+  width: 130px;
+}
+.login_form h2 {
+  font-size: 20px;
+}
+.input-data {
+  position: relative;
+  width: 85%;
+  margin-top: 70px;
+}
+.input-data input {
+  border: none;
+  border-bottom: 1px solid grey;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  outline: none;
+}
+.input-data label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: gray;
+  pointer-events: none;
+  transition: all 0.1s ease;
+}
+.input-data input:focus ~ label {
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: black;
+}
+
+button {
+  background-color: red;
+}
+.next {
+  margin-top: 40px;
+  width: 85%;
+  background-color: #3d88df;
+  border: #0d60be;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 18px;
+  padding: 8px;
+}
+button.next:hover {
+  background-color: #256dbf;
+  cursor: pointer;
+}
+.stay_sign {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.stay_sign a {
+  color: #0d60be;
+  text-decoration: none;
+}
+
+.create_btn {
+  width: 85%;
+  color: #3d88df;
+  font-size: 16px;
+  cursor: pointer;
+  background: none;
+  border: 1px solid #3d88df;
+  margin-top: 30px;
+  padding: 8px;
+}
+.or {
+  width: 85%;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.google_box {
+  margin-top: 30px;
+  border: 1px solid rgb(208, 197, 197);
+  width: 85%;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  padding: 10px;
+}
+.google_box:hover {
+  border: 1px solid #1a64ba;
+}
+.google_logo {
+  width: 50%;
+}
+.google_logo img {
+  width: 18px;
+  margin-left: 77%;
+}
+.google_title {
+  width: 50%;
+  font-size: 17px;
+}
+.terms {
+  margin-top: 50px;
+}
+.terms a {
+  color: #3d88df;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+/*-------------- responsive --------------*/
+
+@media (max-width: 768px) {
+  .content {
+    display: none;
+  }
+
+  .login_form {
+    width: 100%;
+  }
+}
+
+/* using float */
+
+/* .content {
+  background-image: linear-gradient(to bottom right, #cc508d, #0d60be);
+  height: 100vh;
+  width: 67vw;
+  float: left;
+  text-align: center;
+}
+.content img {
+  color: white;
+  margin-top: 150px;
+}
+.content h2 {
+  color: white;
+  margin-top: 150px;
+  margin-top: -17px;
+  font-size: 42px;
+  font-weight: 100;
+}
+.content h4 {
+  color: white;
+  margin-top: 150px;
+  margin-top: 15px;
+  font-size: 23px;
+  font-weight: 100;
+}
+
+/*------------- login form --------------
+
+.login_form {
+  float: right;
+  height: 100vh;
+  width: 29vw;
+  background-color: #fff;
+}
+
+.login_form img {
+  width: 130px;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.login_form h6 {
+  font-size: 20px;
+  margin-left: 130px;
+  font-weight: bold;
+  margin-bottom: 100px;
+}
+*/
+
+/*-------------------- input box------------ 
+
+.input-data {
+  position: relative;
+}
+.input-data input[type="text"] {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  width: 85%;
+  height: 100%;
+  font-size: 15px;
+}
+.input-data label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: gray;
+  pointer-events: none;
+  transition: all 0.1s ease;
+}
+.input-data input:focus ~ label {
+  transform: translateY(-20px);
+  font-size: 15px;
+  color: black;
+}
+.next {
+  margin-top: 30px;
+  width: 85%;
+  background-color: #3d88df;
+  border: #0d60be;
+  height: 40px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 18px;
+}
+*/
+
+/*------------------------ check-box------------------- */
+
+/*
+.stay_sign {
+  height: 30px;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  /* position: relative; 
+}
+
+.stay_sign a {
+  color: #3d88df;
+}
+*/
+
+/* When the checkbox is checked, add a blue background 
+.stay_sign .stay_left input:checked ~ .checkmark {
+  background-color: red;
+}
+
+Create the checkmark/indicator (hidden when not checked)
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+ Show the checkmark when checked 
+.stay_sign .stay_left input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.create_btn {
+  width: 85%;
+  height: 45px;
+  color: #3d88df;
+  font-size: 16px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #3d88df;
+  margin-top: 20px;
+}
+.or {
+  width: 85%;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.google_row {
+  margin-top: 20px;
+  border: 1px solid #3d88df;
+  width: 85%;
+  height: 45px;
+  cursor: pointer;
+  align-items: center;
+}
+.google_logo img {
+  width: 6%;
+  float: left;
+  margin-top: 12px;
+}
+.google_row .google_title {
+  width: 50%;
+  float: right;
+  margin-top: 12px;
+  margin-right: 10px;
+  font-size: 18px;
+}
+.terms {
+  width: 85%;
+  margin-top: 30px;
+  text-align: center;
+}
+.terms a {
+  color: #3d88df;
+  font-size: 15px;
+} */
